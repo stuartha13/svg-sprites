@@ -1,5 +1,3 @@
-*, *:before, *:after { box-sizing: border-box; }
-
 .container { display: block; margin: 0 auto; padding: 0 20px; width: 100%; }
 
 @media (min-width: 768px) { .container { max-width: 790px; } }
@@ -10,7 +8,9 @@
 
 .row { display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; margin: 0 -20px; }
 
-.col { -webkit-flex: 1 1 auto; -ms-flex: 1 1 auto; flex: 1 1 auto; padding: 0 20px; max-width: 100%; }
+.col { -webkit-flex: 1 1 100%; -ms-flex: 1 1 100%; flex: 1 1 100%; padding: 0 20px; max-width: 100%; }
+
+@media (min-width: 768px) { .col { -webkit-flex-basis: auto; -ms-flex-preferred-size: auto; flex-basis: auto; } }
 
 .col--1 { -webkit-flex: 1 1 8.33333%; -ms-flex: 1 1 8.33333%; flex: 1 1 8.33333%; max-width: 8.33333%; }
 
@@ -179,3 +179,7 @@
 @media (min-width: 992px) { .col--align-middle-medium { -webkit-align-self: center; -ms-flex-item-align: center; align-self: center; } }
 
 @media (min-width: 1200px) { .col--align-middle-large { -webkit-align-self: center; -ms-flex-item-align: center; align-self: center; } }
+
+*, *:before, *:after { box-sizing: border-box; }
+
+.icon { width: 1em; height: 1em; vertical-align: middle; fill: currentColor; }

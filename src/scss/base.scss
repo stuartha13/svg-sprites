@@ -1,3 +1,14 @@
-@import 'reset';
+@import './node_modules/griddr/src/scss/grid/grid';
 
-@import 'grid/grid';
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+  fill: currentColor;
+}
